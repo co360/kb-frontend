@@ -1,12 +1,9 @@
 import React from "react";
+
 import "./App.scss";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Home</h1>
-    </div>
-  );
+  return <h1>App</h1>;
 }
 
 export default App;
