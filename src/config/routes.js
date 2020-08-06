@@ -1,61 +1,74 @@
 /** Definimos las rutas y subrutas */
+import AdminLayout from "../layouts/Admin/AdminLayout";
+import UserLayout from "../layouts/User/UserLayout";
+
+import AdminHome from "../pages/Admin/AdminHome/AdminHome";
+import BlogEdition from "../pages/Admin/BlogEdition/BlogEdition";
+import LogIn from "../pages/Admin/LogIn/LogIn";
+import SignIn from "../pages/Admin/SignIn/SignIn";
+import Users from "../pages/Admin/Users/Users";
+
+import About from "../pages/User/About/About";
+import Blog from "../pages/User/Blog/Blog";
+import Contact from "../pages/User/Contact/Contact";
+import Home from "../pages/User/Home/Home";
 
 const routes = [
   {
     path: "/admin",
-    component: null,
+    component: AdminLayout,
     exact: false,
     routes: [
       {
         path: "/admin/blog-edition",
-        component: null,
+        component: BlogEdition,
         exact: true,
       },
       {
         path: "/admin/log-in",
-        component: null,
+        component: LogIn,
         exact: true,
       },
       {
         path: "/admin/sign-in",
-        component: null,
+        component: SignIn,
         exact: true,
       },
       {
         path: "/admin/users",
-        component: null,
+        component: Users,
         exact: true,
       },
       {
         path: "/admin",
-        component: null,
+        component: AdminHome,
         exact: true,
       },
     ],
   },
   {
     path: "/",
-    component: null,
+    component: UserLayout,
     exact: false,
     routes: [
       {
         path: "/about",
-        component: null,
+        component: About,
         exact: true,
       },
       {
         path: "/blog",
-        component: null,
+        component: Blog,
         exact: true,
       },
       {
         path: "/contact",
-        component: null,
+        component: Contact,
         exact: true,
       },
       {
         path: "/",
-        component: null,
+        component: Home,
         exact: true,
       },
     ],
