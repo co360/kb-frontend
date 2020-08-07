@@ -1,12 +1,20 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import "./UserLayout";
+import NavigationBar from "../../components/Shared/Navigation/NavigationBar";
+
+import "./UserLayout.scss";
 
 const UserLayout = (props) => {
   const { routes } = props;
-
-  return <LoadRoutes routes={routes} />;
+  return (
+    <div className="user-layout">
+      <NavigationBar />
+      <div className="user_layout__content">
+        <LoadRoutes routes={routes} />
+      </div>
+    </div>
+  );
 };
 
 function LoadRoutes({ routes }) {
