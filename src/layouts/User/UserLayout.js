@@ -10,14 +10,15 @@ const UserLayout = (props) => {
   return (
     <div className="user-layout">
       <NavigationBar />
-      <div className="user_layout__content">
+      <div className="user-layout__content">
         <LoadRoutes routes={routes} />
       </div>
     </div>
   );
 };
 
-function LoadRoutes({ routes }) {
+function LoadRoutes(props) {
+  const { routes } = props;
   return (
     <Switch>
       {routes.map((route, index) => (
@@ -25,7 +26,7 @@ function LoadRoutes({ routes }) {
           key={index}
           path={route.path}
           exact={route.exact}
-          component={route.component}
+          render={(routeProps) => <route.component {...routeProps} />}
         />
       ))}
     </Switch>

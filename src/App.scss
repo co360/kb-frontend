@@ -1,5 +1,4 @@
 @import "./scss/variables";
-@import "~bootstrap/scss/bootstrap";
 
 * {
   box-sizing: content-box;
@@ -19,3 +18,5 @@ h2 {
 p {
   font-family: "Raleway", sans-serif;
 }
+
+@import "~bootstrap/scss/bootstrap";

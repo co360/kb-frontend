@@ -8,7 +8,7 @@ import LogIn from "../pages/Admin/LogIn/LogIn";
 import SignIn from "../pages/Admin/SignIn/SignIn";
 import Users from "../pages/Admin/Users/Users";
 
-import About from "../pages/User/About/About";
+import Prices from "../pages/User/Prices/Prices";
 import Blog from "../pages/User/Blog/Blog";
 import Contact from "../pages/User/Contact/Contact";
 import Home from "../pages/User/Home/Home";
@@ -52,8 +52,8 @@ const routes = [
     exact: false,
     routes: [
       {
-        path: "/about",
-        component: About,
+        path: "/prices",
+        component: Prices,
         exact: true,
       },
       {

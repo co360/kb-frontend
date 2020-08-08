@@ -1,33 +1,47 @@
 @import "../../../scss/variables";
+.bg-color {
+  border-bottom: 3px solid $primary-color;
+}
 
-.navbar-brand {
-  div {
-    display: flex;
-    justify-content: center;
+.img-fluid {
+  max-width: 18rem !important;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler {
+  padding: 0 !important;
+  span {
+    color: $secondary-color;
+    font-size: 3rem;
   }
 }
 
-.navbar-nav a {
-  padding: 0.5rem 1rem;
-  color: white !important;
-  cursor: pointer;
-  transition: ease-in-out, 0.3s;
-}
-
-.navbar-nav a:hover {
-  text-decoration: none;
-  color: $secondary-color !important;
-}
-
-@media (max-width: 768px) {
-  .navbar-nav a {
-    color: white !important;
-    display: flex;
-    margin-top: 1rem;
-    justify-content: center;
-    border: 1px solid $secondary-color;
-  }
-  .navbar-nav a:hover {
+.navbar-nav {
+  .active {
     color: $secondary-color !important;
+    font-weight: 700;
+  }
+  h3 {
+    text-align: center;
+    color: $secondary-color;
+    border-bottom: 1px solid $secondary-color;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    color: $text-color;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: none;
+      color: $secondary-color;
+      font-weight: 700;
+    }
   }
 }
