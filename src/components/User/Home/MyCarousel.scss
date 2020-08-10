@@ -1,0 +1,36 @@
+@import "../../../scss/variables";
+
+.item-key {
+  &-1 {
+    width: 100vw;
+    height: 30vh;
+    background-image: url("../../../assets/img/healthy-lose.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+  }
+  &-2 {
+    width: 100vw;
+    height: 30vh;
+    background-image: url("../../../assets/img/healthy-body.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+  }
+  &-3 {
+    width: 100vw;
+    height: 30vh;
+    background-image: url("../../../assets/img/healthy-pregnant.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+  }
+  &-4 {
+    width: 100vw;
+    height: 30vh;
+    background-image: url("../../../assets/img/healthy-mind.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+  }
+}

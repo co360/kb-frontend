@@ -1,0 +1,58 @@
+@import "../../../scss/variables";
+
+// @import "../../../assets/img/healthy-lose.jpg";
+// @import "../../../assets/img/healthy-body.jpg";
+// @import "../../../assets/img/healthy-pregnant.jpg";
+// @import "../../../assets/img/healthy-mind.jpg";
+
+.card {
+  flex-basis: calc(50% - 2rem);
+}
+
+.home-cards__card {
+  background-size: cover;
+  background-position: center;
+  min-height: 12rem;
+  border: none !important;
+  border-radius: 3% !important;
+
+  .bg-color {
+    height: 100%;
+    width: 100%;
+    background-color: $primary-color;
+    border-radius: 3% !important;
+    opacity: 0.2;
+    transition: ease-in 0.4s;
+  }
+
+  p {
+    position: absolute;
+    margin-bottom: 0;
+    padding-top: 8rem;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 1rem;
+    color: white;
+    transition: ease-in 0.4s;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &:hover {
+    .bg-color {
+      opacity: 0.5;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    display: block;
+    flex-basis: calc(25% - 3rem);
+  }
+}

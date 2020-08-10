@@ -1,0 +1,24 @@
+@import "../../../scss/variables";
+
+.btn {
+  width: 100%;
+  background-color: $jumbotron-background !important;
+  color: white !important;
+  font-weight: 700;
+  border: none !important;
+  box-shadow: 2px 2px 5px #adadac;
+
+  &:hover {
+    background-color: darken($jumbotron-background, 10%) !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    display: grid;
+    .btn {
+      width: 12rem;
+      justify-self: end;
+    }
+  }
+}

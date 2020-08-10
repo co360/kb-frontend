@@ -46,7 +46,7 @@ const NavigationBar = (props) => {
       expanded={isExpanded}
       bg="color"
     >
-      <Navbar.Brand href="/" className="w-75">
+      <Navbar.Brand href="#" className="w-75">
         <img alt="Logotipo" src={logo} className="img-fluid w-75" />
       </Navbar.Brand>
       <Navbar.Toggle children={<span className="material-icons">menu</span>} />

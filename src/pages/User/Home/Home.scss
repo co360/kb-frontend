@@ -1,0 +1,8 @@
+@import "../../../scss/variables";
+
+.home-cards {
+  margin: auto;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}

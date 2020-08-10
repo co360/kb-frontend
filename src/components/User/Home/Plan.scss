@@ -1,0 +1,42 @@
+@import "../../../scss/variables";
+
+.plan {
+  flex-basis: 100%;
+  margin-top: 1rem;
+  position: relative;
+  border: 1px solid #adadac;
+  box-shadow: -3px 3px 10px #adadac;
+  padding: 1rem 2rem;
+  li {
+    font-size: 1rem;
+    font-family: "Indie Flower", cursive;
+  }
+  h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Indie Flower", cursive;
+  }
+}
+
+span.productImg {
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+  min-width: 120px;
+  min-height: 120px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.push-pin {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .plan {
+    flex-basis: calc(50% - 1rem);
+  }
+}
