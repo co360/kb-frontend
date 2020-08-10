@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/kb-frontend/static/css/main.5341c381.chunk.css",
+    "main.js": "/kb-frontend/static/js/main.56b06ee3.chunk.js",
+    "main.js.map": "/kb-frontend/static/js/main.56b06ee3.chunk.js.map",
+    "runtime-main.js": "/kb-frontend/static/js/runtime-main.53fd3f5a.js",
+    "runtime-main.js.map": "/kb-frontend/static/js/runtime-main.53fd3f5a.js.map",
+    "static/js/2.6ae6b591.chunk.js": "/kb-frontend/static/js/2.6ae6b591.chunk.js",
+    "static/js/2.6ae6b591.chunk.js.map": "/kb-frontend/static/js/2.6ae6b591.chunk.js.map",
+    "index.html": "/kb-frontend/index.html",
+    "precache-manifest.fe2df6123b0edd78891dd3f43ff31cc8.js": "/kb-frontend/precache-manifest.fe2df6123b0edd78891dd3f43ff31cc8.js",
+    "service-worker.js": "/kb-frontend/service-worker.js",
+    "static/css/main.5341c381.chunk.css.map": "/kb-frontend/static/css/main.5341c381.chunk.css.map",
+    "static/js/2.6ae6b591.chunk.js.LICENSE.txt": "/kb-frontend/static/js/2.6ae6b591.chunk.js.LICENSE.txt",
+    "static/media/computer.png": "/kb-frontend/static/media/computer.12c5745f.png",
+    "static/media/MyCarousel.scss": "/kb-frontend/static/media/healthy-pregnant.ba34d0d1.jpg",
+    "static/media/logo.jpeg": "/kb-frontend/static/media/logo.0346618c.jpeg",
+    "static/media/About.scss": "/kb-frontend/static/media/profile-picture.d36b40f6.jpeg",
+    "static/media/sport.png": "/kb-frontend/static/media/sport.5af8892a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.53fd3f5a.js",
+    "static/js/2.6ae6b591.chunk.js",
+    "static/css/main.5341c381.chunk.css",
+    "static/js/main.56b06ee3.chunk.js"
+  ]
+}
