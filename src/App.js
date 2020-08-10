@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 import routes from "./config/routes";
 
@@ -7,13 +7,13 @@ import "./App.scss";
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
       <Switch>
         {routes.map((route, index) => (
           <RouteWithSubRoutes key={index} {...route} />
         ))}
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 
