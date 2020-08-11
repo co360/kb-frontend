@@ -1,0 +1,39 @@
+@import "../../../scss/variables";
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  td.description {
+    display: block;
+    border: 1px solid #fff;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: left;
+    padding: 1rem;
+    border-top: 10px solid #fff;
+    font-size: 0.9rem !important;
+    font-weight: 700;
+    background-color: #fff;
+
+    div {
+      font-size: 0.8rem !important;
+      font-weight: 400;
+    }
+  }
+  td.val {
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .info {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    td.description {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+}

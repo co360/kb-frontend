@@ -1,0 +1,33 @@
+@import "../../../scss/variables";
+
+.titles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-collapse: collapse;
+  th.description {
+    display: none;
+    border: 1px solid #fff;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    padding: 1rem;
+    background-color: lighten($jumbotron-background, 20%);
+  }
+  th.val {
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 1rem;
+    background-color: lighten($jumbotron-background, 20%);
+  }
+}
+
+@media (min-width: 768px) {
+  .titles {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    th.description {
+      display: block;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+}

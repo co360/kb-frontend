@@ -1,0 +1,53 @@
+@import "../../../scss/variables";
+
+.table-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  td.description {
+    display: none;
+    border: 1px solid #fff;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: left;
+    padding: 1rem;
+    border-top: 10px solid #fff;
+    font-size: 0.9rem !important;
+    font-weight: 700;
+    background-color: #fff;
+
+    div {
+      font-size: 0.8rem !important;
+      font-weight: 400;
+    }
+  }
+  td.val {
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem !important;
+    background-color: #fff;
+  }
+  span.btn {
+    width: 100%;
+    background-color: $jumbotron-background;
+    color: white;
+    font-weight: 700;
+    border: none;
+    box-shadow: 2px 2px 5px #adadac;
+
+    &:hover {
+      background-color: darken($jumbotron-background, 10%) !important;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .table-buttons {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    td.description {
+      display: block;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+}
